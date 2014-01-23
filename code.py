@@ -127,8 +127,8 @@ class auth:
         data = web.input()
         OAUTH_TOKEN = data.oauth_token
         OAUTH_TOKEN_SECRET = web.cookies().get("OAUTH_TOKEN_SECRET")
-        APP_KEY = '9QCAfAHTEPYHRa4IKhy4Vw'
-        APP_SECRET = 'VhswLQnRdp9550CqIxYsvszdv5odNd55GmSahtK9j1M'
+        APP_KEY = '##################'
+        APP_SECRET = '####################'
         print OAUTH_TOKEN
         print OAUTH_TOKEN_SECRET
         heeey = Twython(APP_KEY, APP_SECRET,
