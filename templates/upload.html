@@ -1,0 +1,26 @@
+$def with (username, plus)
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/testing_zone/static/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="maximum-scale=1">
+<title>Robogram</title>
+</head>
+<body>
+<div id=navbar><a href="/robogram/"><h2>Robogram</h2></a><img id=logo src=/robogram/static/logo.png></img>$:plus<h3>$:username</h3></div>
+<div id=uploads>
+<form method="POST" enctype="multipart/form-data" action="">
+Description: <input type="text" name="description">
+<br><input type="radio" name="tags" value="yolo"> #yolo <br>
+<input type="radio" name="tags" value="swag" checked>#swag<br>
+<input type="radio" name="tags" value="omgrobots">#omgrobots<br>
+<input type="radio" name="tags" value="ilovegears"> #ilovegears<br>
+<input type="checkbox" name="share" value="hellyeah">Share to Twitter <br><br>
+<br><input type="file" name="myfile" accept="image/*" capture="camera"> 
+<br/>
+<input type="submit" />
+</form>
+</div>
+</body>
+</html>
+

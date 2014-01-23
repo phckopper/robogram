@@ -1,0 +1,14 @@
+$def with (username, plus, code, pic_url, profiled, bio)
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/testing_zone/static/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="maximum-scale=1">
+<title>Robogram</title>
+</head>
+<body>
+<div id=navbar><a href="/robogram/"><h2>Robogram</h2></a><img id=logo src=/robogram/static/logo.png></img>$:plus<h3>$:username</h3></div>
+<div id=profile><img src=$:pic_url></img>$:profiled<br>$:bio</div>
+<div id=main>$:code</div>
+</body>
+</html>
